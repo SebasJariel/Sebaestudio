@@ -3,34 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bienvenido a Seba Estudio">
+    <meta name="keyword" content="diseño, web, graficos, logos">
     <link rel="stylesheet" href="style/style.css">
-    <title>SebaEstudio Contacto</title>
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="style/movile.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="#">Servicios</a></li>
-            <li> <a href="#">Portafolio</a></li>
-            <li> <a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div>
-        <h1>Contacto</h1>
-    </div>
-    <article>
-        <form action="">
-            <label for="name">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value="Nombre">
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Seba Estudio</a></h1>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portaf&oacute;lio</a></li>
+                    <li><a class="current" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>        
+    </header>
 
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" value="Ingrese su correo">
+    <!-- Contacto -->
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <h1 class="l-heading">
+                <span class="text-primary">Contáctenos</span>
+            </h1>
+            <p>Por favor llene el siguiente formulario</p>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje"> Ingrese ac&aacute; su mensaje</textarea>
+            <form action="procesar.php">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </article>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su E-mail">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                <button class="btn">Contactar</button>
+            </form>
+        </div>
+     </section>
+
+     <section id="contact-info" class="bg-gray">
+        <div class="container">
+            <div class="box">
+                <i class="fa-solid fa-house-chimney-user fa-2x"></i>
+                <h3>Ubicación</h3>
+                <p>Calle 56, 23-45 Tallarín, Chile</p>
+            </div>
+            
+            <div class="box">
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <h3>Teléfono</h3>
+                <p>+569 132 321 123</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h3>Ubicación</h3>
+                <p>seba@hotmail.com</p>
+            </div>
+        </div>
+
+     </section>
+
+     <footer id="main-footer">
+        <p>SebaEstudio&copy; 2024, todos los derechos reservados</p>
+     </footer>
 </body>
 </html>

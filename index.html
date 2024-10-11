@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bienvenido a Seba Estudio">
+    <meta name="keyword" content="diseño, web, graficos, logos">
     <link rel="stylesheet" href="style/style.css">
-    <title>SebaEstudio Inicio</title>
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="style/movile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Seba Estudio</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Inicio</a></li>
-            <li> <a href="#">Servicios</a></li>
-            <li> <a href="#">Portafolio</a></li>
-            <li> <a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <div>
-        <h1> Bienvenido a Sebaestudio</h1>
-        <p>Hola Mundo</p>
-    </div>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="index.html">Seba Estudio</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portaf&oacute;lio</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <h1><span class="text-primary">Dise&ntilde;o</span> Multimedia</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellat mollitia animi fugit consequuntur nulla nisi exercitationem quaerat quisquam error.</p>
+                    <a href="acerca.html" class="btn">Mi curriculum</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home -->
+     <secction id="home-info">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2><span class="text-primary">Sobre</span> mí</h2>
+            <p>Soy Sebastián ipsum dolor sit amet consectetur adipisicing elit. Optio fugit incidunt maxime neque fuga nobis quisquam non eum animi ducimus vel natus quae dolore reiciendis illum, repudiandae, a vero ea! Nobis, commodi dignissimos? Cumque blanditiis iusto esse dolores deleniti ducimus magnam autem! Repudiandae beatae quam fuga suscipit nemo, quis vitae.</p>
+            <a href="acerca.html" class="btn btn-primary">Ver mi curriculum</a>
+        </div>
+     </secction>
+     <!-- Features -->
+     <section id="features">
+        <div class="box bg-gray">
+            <i class="fa-solid fa-spa fa-3x"></i>
+            <h3>Gráficos</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quidem culpa sed hic qui consequatur iusto adipisci id mollitia laudantium</p>
+        </div>
+
+        <div class="box bg-light">
+            <i class="fa-solid fa-palette fa-3x"></i>
+            <h3>Mutimedia</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quidem culpa sed hic qui consequatur iusto adipisci id mollitia laudantium</p>
+        </div>
+
+        <div class="box bg-primary">
+            <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+            <h3>Dise&ntilde;o web</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quidem culpa sed hic qui consequatur iusto adipisci id mollitia laudantium</p>
+        </div>
+
+     </section>
+     <!-- Reset Flotados -->
+      <div class="clr"></div>
+     <footer id="main-footer">
+        <p>SebaEstudio&copy; 2024, todos los derechos reservados</p>
+     </footer>
 </body>
 </html>
