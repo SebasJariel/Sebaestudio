@@ -333,7 +333,7 @@ nav a:hover{
 /* Galeria  */
 .gallery{
     padding: 60px 20px;
-    max-height: 450px;
+    max-height: auto;
     
 }
 .gallery h2{
@@ -592,6 +592,7 @@ nav a:hover{
     min-height: 300px;
     background-color: #171430;
     color: #ccc;
+    text-align: center;
 
 }
 
@@ -638,12 +639,6 @@ nav a:hover{
 .social-icons a {
   display: inline-block;
   margin-right: 10px;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1); /* para que los iconos sean blancos */
 }
 
 .footer-bottom {
@@ -705,7 +700,38 @@ nav a:hover{
         text-align: left;
     }
 
-    /* cominudad */
+    /* descripcion producto */
+    .detalle-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .detalle-texto, .detalle-imagen {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .detalle-texto h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .detalle-texto ul {
+    padding-left: 20px;
+    list-style-position: outside;
+  }
+
+  .detalle-texto li {
+    font-size: 16px;
+  }
+
+  .detalle-imagen img {
+    max-width: 90%;
+    height: auto;
+  }
+
+    /* comunidad */
 
     .comunity {
         flex-direction: column;
