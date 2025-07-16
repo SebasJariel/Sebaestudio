@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #171430;
+    
+}
+/* scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Header === */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo-header{
+    width: 150px;
+}
+
+a {
+    text-decoration: none; ;
+    color: #171430;
+}
+nav a{
+    font-weight: 500;
+    padding-right: 10px;
+
+}
+nav a:hover{
+    color: cornflowerblue;
+}
+
+/* menu hamburgesa */
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #171430;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* === Hero Banner ===*/
+.hero{
+    background-color: #F5FFF9;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: contain;
+}
+.hero-section {
+    background-image: url(../img/fondo03v.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    
+
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+    
+}
+
+.hero-text h1{
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+}
+
+.hero-text p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.hero-img{
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+
+}
+
+.button {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #1b5e20;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.titulo {
+    color: #171430;
+
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-img {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* === Caracteristicas === */
+
+.logos-section{
+    padding: 60px 20px;
+    background-color: #f0fef4;
+    text-align: center;
+}
+
+.items-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.09);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #36803a;
+}
+
+.item p {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #36803a;
+}
+
+.wrap-logos-section h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #171430;
+}
+
+/* descripcion producto */
+
+.detalle-producto {
+    padding: 60px 40px;
+    background-color: #f0fef4;
+}
+
+.detalle-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.detalle-texto {
+    flex: 1;
+}
+
+.detalle-texto h2 {
+    font-size: 20px;
+    color: #171430;
+    margin-bottom: 40px;
+}
+
+.detalle-texto ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.detalle-texto li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.detalle-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.detalle-imagen img {
+    max-width: 100%;
+    max-height: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Impacto Ecologico */
+
+.impact {
+  padding: 60px 20px;
+  background-color: #f5fff9;
+}
+
+.impacto-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.impact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #171430;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* para hacerlo responsive */
+}
+
+.item-text {
+  max-width: 500px;
+  flex: 1 1 300px;
+}
+
+.item-text h3 {
+  margin-bottom: 15px;
+  color: #171430;
+}
+
+.item-text ul {
+  margin: 15px 0 0 20px;
+  padding-left: 0;
+}
+
+.item-img {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.item-img img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* Galeria  */
+.gallery{
+    padding: 60px 20px;
+    max-height: 450px;
+    
+}
+.gallery h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.galeria {
+	width: 90%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    font-size: 28px;
+}
+.galeria-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;   
+}
+
+.galeria li {
+	margin: 10px;
+    list-style: none;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.galeria a {
+    display: block;
+    background-color: white;
+    padding: 10px 10px 25px 10px; 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.galeria a:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: auto;
+	height: auto;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 20px;
+}
+
+
+
+/* formulario */
+
+.solicitud {
+  background-color: #f5fff9;
+  padding: 60px 20px;
+}
+
+.solicitud-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.solicitud h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #171430;
+}
+
+.solicitud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.solicitud-form input,
+.solicitud-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.solicitud-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.solicitud-form .button {
+  align-self: center;
+  border: none;
+  padding: 12px 32px;
+}
+
+/* newsleatter comunidad */
+.comunity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 20px;
+    background-color: #f5fff9;
+    text-align: left;
+}
+
+.newsletter-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.newsletter-text{
+    flex: 1;
+    justify-content: first baseline;
+    min-width: 250px;
+    padding: 0 20px;
+
+}
+
+.newsletter-form {
+    flex: 1;
+    min-width: 250px;
+}
+
+.newsletter-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 12px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.newsletter-form .button {
+  padding: 12px 24px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-form .button:hover {
+  background-color: #1b5e20;
+}
+
+.footer-transition {
+    background-color: #f5fff9;
+    background-image: url(../img/newsletter-1920.png);
+    background-repeat: repeat-x;
+    position: top center;
+    background-size: auto 100%;
+    height: 350px;
+    width: 100%;
+    display: block;
+}
+
+/* === Footer ===*/
+
+.footer{
+    padding: 20px 20px 20px;
+    min-height: 300px;
+    background-color: #171430;
+    color: #ccc;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4,
+.footer-col h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-col p,
+.footer-col li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* para que los iconos sean blancos */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #a7ffaf;
+}
+
+
+/* === Version mobile ===*/
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+  }
+    .hero-text {
+        text-align: center;
+    }
+
+
+    /* menu hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #fff;
+        border-top: 1px solid  #ddd;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a{
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+    }
+
+    /* cominudad */
+
+    .comunity {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* newsletter */ 
+    .newsletter-form form {
+        justify-content: center;
+    }   
+
+}
+
+@media (min-width: 768px) {
+
+    /* detalles producto*/
+    .detalle-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
